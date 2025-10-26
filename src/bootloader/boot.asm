@@ -28,8 +28,8 @@ ebr_drive_number:               db 0                 ; 0x00 floppy, 0x80 hard di
 ebr_reserved:                   db 0                 ; reserved
 ebr_signature:                  db 29h               ; extended boot signature
 ebr_volume_id:                  db 12h, 34h, 56h, 78h   ; volume ID
-ebr_volume_label:               db 'MY OS'           ; volume label (11 bytes)
-ebr_system_id:                  db 'FAT12   '        ; file system type (7 bytes)
+ebr_volume_label:               db 'MY OS      '           ; volume label (11 bytes)
+ebr_system_id:                  db 'FAT12  '        ; file system type (7 bytes)
 
 ; 
 ; Bootloader code starts here
